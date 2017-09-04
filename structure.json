@@ -1,0 +1,29 @@
+var structure = {
+  "lignes":[
+    {
+      "type": "4s",
+      "magasins": [
+        "Informatique",
+        "Tablette tactile",
+        "Image et son",
+        "Jardin"
+      ]
+    },
+    {
+      "type": "2b",
+      "magasins": [
+        "Informatique",
+        "Tablette tactile"
+      ]
+    },
+    {
+      "type": "2s1b2s",
+      "magasins": [
+        "Informatique",
+        "Tablette tactile",
+        "Image et son",
+        "Jardin"
+      ]
+    }
+  ]
+}

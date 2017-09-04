@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'montserratbold';
+    src: url('montserrat/montserrat-bold-webfont.woff2') format('woff2'),
+         url('montserrat/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratextrabold';
+    src: url('montserrat/montserrat-extrabold-webfont.woff2') format('woff2'),
+         url('montserrat/montserrat-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratlight';
+    src: url('montserrat/montserrat-light-webfont.woff2') format('woff2'),
+         url('montserrat/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'montserratregular';
+    src: url('montserrat/montserrat-regular-webfont.woff2') format('woff2'),
+         url('montserrat/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#pageContainer{
+	background: url('background-test.jpg') no-repeat fixed;
+	background-size: cover;
+	font-size: 12px;
+    overflow: hidden;
+    font-family: 'montserratregular';
+}
+
+
+@-webkit-keyframes animBallon {
+	100% { transform:translateX(12px) translateY(0px) rotate(3deg) }
+}
+@-moz-keyframes animBallon {
+	100% { transform:translateX(12px) translateY(0px) rotate(3deg) }
+}
+@-o-keyframes animBallon {
+	100% { transform:translateX(12px) translateY(0px) rotate(3deg) }
+}
+@keyframes animBallon {
+	100% { transform:translateX(12px) translateY(0px) rotate(3deg) }
+}
+
+.ballonBg{
+	position: fixed;
+    top: 200px;
+    left: -150px;
+    transform-origin:50% 0%;
+    transform:translateX(0px) translateY(0px) rotate(0deg);
+
+    -webkit-animation: animBallon 7s ease-in-out infinite alternate;
+	   -moz-animation: animBallon 7s ease-in-out infinite alternate;
+	     -o-animation: animBallon 7s ease-in-out infinite alternate;
+	        animation: animBallon 7s ease-in-out infinite alternate;
+}
+
+.ligne{
+	margin-bottom: 15px;
+}
+
+.vignette{
+    overflow: hidden;
+
+}
+
+.vignette img{
+	width:100%;
+}
+
+.mTop17{
+	margin-top: 17px;
+}
+
+.mTop-2{
+    margin-top: -2px;
+}
+
+.socialMedia{
+    transition:top .3s ease;
+    background-color: #383838;
+    position: absolute;
+    width: 30%;
+    height: 12%;
+    margin-left: 50%;
+    left: -15%;
+    text-align: center;
+}
+
+.socialMedia .facebook, .socialMedia .twitter{
+    display: inline-block;
+    width:30%;
+    margin-top:4%;
+    height: 80%;
+}
+
+.socialMedia .facebook{
+    transition: all .3s ease;
+    background: url('fb.png') no-repeat;
+    background-size: contain;
+    margin-right: 9%;
+    transform:translateX(0);
+}
+
+.socialMedia .facebook:hover{
+    transition: all .1s ease;
+    background: url('fb-hover.png') no-repeat;
+    background-size: contain;
+    margin-right: 9%;
+    transform:translateX(0);
+}
+
+.socialMedia .twitter{
+    transition: all .3s ease;
+    background: url('tw.png') no-repeat;
+    background-size: 100%;
+    background-position:0 100%; 
+}
+
+.containCompteur{
+    padding: 0 10px;
+}
+
+.bandeauCompteur{
+	text-align:center;
+	display: block;
+	color:#ffffff;
+    background-color:#383838;
+	text-decoration: none;
+	font-family: 'montserratlight';
+	font-size: 28px;
+	padding: 10px 0;
+	text-transform: uppercase;
+    transition:all .4s ease;
+}
+
+.fixedCompteur{
+    position: fixed;
+    z-index: 999;
+    width:100%;
+    top: 0;
+    left: 0;
+    color: white;
+}
+.spacerFixed{
+    height: 68px;
+    display: none;
+}
+
+.bandeauPromo{
+    position: absolute;
+    top: 56.7%;
+    left: 27%;
+    width: 46%;
+    background-color: #2ecdd3;
+    text-align: center;
+}
+
+.xblocs{
+    position: relative;
+}
+
+.bandeauPromoBis{
+    position: absolute;
+    top: 158px;
+    left: 27%;
+    width: 46%;
+    background-color: #2ecdd3;
+    text-align: center;
+}
+
+.bandeauPromo .promo, .bandeauPromoBis .promo{
+    color: white;
+    font-family: 'montserratregular';
+    font-size: 26px;
+    margin-bottom: 2%;
+}
+
+@media (max-width: 1200px) {
+    .mTop1200{
+        margin-top: 17px;
+    }
+}
