@@ -41,9 +41,9 @@
     }
 
 
-  // On récupere la liste des pages
-  $selectPages = $db->query("SELECT * FROM vp_pages");
-  $pages = $selectPages->fetchAll();
+  // On récupere la liste des magasins
+  $selectMagasins = $db->query("SELECT * FROM vp_magasins");
+  $magasins = $selectMagasins->fetchAll();
 
 
 ?>
@@ -61,9 +61,62 @@
             <div class="col-sm-6">
               <form action="#" method="POST" enctype="multipart/form-data">
 
-                <div class="form-group">
-                  <label for="nom_magasin">Choix des magasins :</label>
-                  <input type="text" class="form-control" id="nom_magasin" placeholder="Nom de la page :" name="nom_magasin"/>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                  Ajouter un magasin
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Choisir un magasin</h4>
+                      </div>
+                      <div class="form-group">
+                        <label for="nom_magasin">Structure de la ligne :</label>
+                        <input type="text" class="form-control" id="nom_magasin" placeholder="Nom de la page :" name="nom_magasin"/>
+                      </div>
+                      <div class="modal-body containerModal">
+                      <div class="table-responsive">
+                        <table class="table table-striped">
+                        
+                          <thead>
+                            <tr>
+                              <th>#</th>
+                              <th>Nom</th>
+                              <th>Image</th>
+                              <th>Type valeur</th>
+                              <th>Valeur</th>
+                              <th>Lien</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+
+                          <?php foreach ($magasins as $k => $magasin): ?>
+
+                            <tr>
+                              <td><?= $magasin['id_mag'] ?></td>
+                              <td><?= $magasin['nom_mag'] ?></td>
+                              <td> <img style="width:60px;" src="<?= WEBROOT.'images/'.$magasin['url_img_mag'] ?> "></td>
+                              <td><?= $magasin['type_val_mag'] ?></td>
+                              <td><?= $magasin['val_mag'] ?></td>
+                              <td><?= $magasin['link_mag'] ?></td>
+                            </tr>
+
+                          <?php endforeach  ?>
+                            
+                          </tbody>
+                        </table>
+                      </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="form-group">

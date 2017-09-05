@@ -160,11 +160,16 @@
 
 .bandeauPromo{
     position: absolute;
-    top: 56.7%;
+    top: 54%;
     left: 27%;
     width: 46%;
     background-color: #2ecdd3;
     text-align: center;
+}
+
+.bandeauPromo .valEco{
+    display: block;
+    margin-top: 7px;
 }
 
 .xblocs{

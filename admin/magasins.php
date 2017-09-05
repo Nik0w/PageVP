@@ -34,7 +34,9 @@
           <h1 class="page-header">Magasins :</h1>
 
           <a href="add_magasin.php"><button class="btn btn-success">Ajouter un magasin</button></a>
+          <hr>
 
+          
           
           <div class="table-responsive">
             <table class="table table-striped">

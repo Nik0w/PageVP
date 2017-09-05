@@ -46,6 +46,11 @@
               <label for="val_mag">Valeur :</label>
               <input type="text" class="form-control" id="val_mag" placeholder="Slug" name="val_mag" value="<?php echo $_POST['val_mag']; ?>">
             </div>
+            <div class="form-group">
+              <label for="val_mag">Image :</label>
+              <img style="width:300px;" src="<?= WEBROOT.'images/'.$_POST['url_img_mag'] ?> ">
+            </div>
+            
 
             <div class="form-group">
               <label for="link_mag">Lien :</label>

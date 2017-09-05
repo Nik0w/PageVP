@@ -11,6 +11,7 @@
       $val_mag = $db->quote($_POST['val_mag']);
       $link_mag = $db->quote($_POST['link_mag']);
 
+
         /**
         * SAUVEGARDE DU MAGASIN
         **/
@@ -37,14 +38,21 @@
           die();
 
       }else{
-
+        echo '<p class="bg-danger">Le format de l\'image n\'est pas bon !</p>';
       }
+    }else{
+      // infos manquantes
+      echo '<p class="bg-danger">Il manque des informations !</p>';
     }
 
 
   // On récupere la liste des compagnies
   $select_magasins = $db->query("SELECT * FROM vp_magasins");
   $magasins = $select_magasins->fetchAll();
+
+  // On récupere la liste des types
+  $selectTypesVal = $db->query("SELECT * FROM vp_type_val");
+  $typesVal = $selectTypesVal->fetchAll();
 
 
 ?>
@@ -74,7 +82,11 @@
 
                 <div class="form-group">
                   <label for="type_val_mag">Type valeur :</label>
-                  <input type="text" class="form-control" id="type_val_mag" placeholder="Type valeur :" name="type_val_mag"/>
+                  <select class="form-control" name="type_val_mag">
+                    <?php foreach ($typesVal as $k => $typeVal): ?>
+                      <option value="<?= utf8_encode($typeVal['id_type_val']) ?>"><?= utf8_encode($typeVal["type_val"]) ?></option>
+                    <?php endforeach  ?>
+                  </select>
                 </div>
 
                 <div class="form-group">
@@ -96,6 +108,8 @@
             </div>
 
              <div class="col-sm-6">
+              <h2>Liste des magasins :</h2>
+              <hr>
               <div class="table-responsive">
                 <table class="table table-striped">
                 
@@ -115,7 +129,7 @@
                         <td><?= $magasin['nom_mag'] ?></td>
                         <td><?= $magasin['type_val_mag'] ?></td>
                         <td><?= $magasin['val_mag'] ?></td>
-                        <td><a href="competences_edit.php?id=<?= $magasin['id_mag'] ?>"><button class="btn btn-success">Editer</button></a>
+                        <td><a href="edit_magasin.php?id=<?= $magasin['id_mag'] ?>"><button class="btn btn-success">Editer</button></a>
                             <a href="?delete=<?= $magasin['id_mag'] ?>&csrf=<?= $_SESSION['csrf'] ?>"><button class="btn btn-warning" onclick="return confirm('Voulez-vous vraiment supprimer ?');">Supprimer</button></a>
                         </td>
                     </tr>
