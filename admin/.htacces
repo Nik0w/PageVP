@@ -1,0 +1,16 @@
+#--------------------------------------------------
+# Répertoire : /admin/
+#--------------------------------------------------
+
+# Le serveur doit suivre les liens symboliques :
+Options +FollowSymlinks
+
+# Activation du module de réécriture d'URL :
+RewriteEngine on
+
+#--------------------------------------------------
+# Règles de réécriture d'URL :
+#--------------------------------------------------
+
+# Article sans numéro de page :
+RewriteRule ^edit_page-([0-9]+).html$   /pages/edit_page.php?id=$1 [L]

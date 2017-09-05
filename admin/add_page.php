@@ -74,7 +74,7 @@
                 <div class="form-group">
                   <input type="hidden" value="<?= $_SESSION['csrf'] ?>" name="csrf">
                 </div>
-                <button type="submit" class="btn btn-default">Enregistrer la page</button>
+                <button type="submit" class="btn btn-default">Enregistrer la page : </button>
 
               </form>
             </div>

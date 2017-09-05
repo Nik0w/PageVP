@@ -11,7 +11,6 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="users.php">Utilisateurs</a></li>
             <li><a href="pages.php">Mes Pages</a></li>
             <li><a href="lignes.php">Lignes</a></li>
             <li><a href="magasins.php">Magasins</a></li>
@@ -33,7 +32,6 @@
         <div class="col-sm-3 col-md-2 sidebar">
           <ul class="nav nav-sidebar">
             <li class="active"><a href="index.php">Accueil <span class="sr-only">(current)</span></a></li>
-            <li><a href="users.php">Utilisateurs</a></li>
             <li><a href="pages.php">Mes Pages</a></li>
             <li><a href="lignes.php">Lignes</a></li>
             <li><a href="magasins.php">Magasins</a></li>

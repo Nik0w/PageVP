@@ -54,21 +54,21 @@
 
               <?php foreach ($magasins as $k => $magasin): ?>
 
-					<tr>
-            <td><?= $magasin['id_mag'] ?></td>
-            <td><?= $magasin['nom_mag'] ?></td>
-            <td> <img style="width:60px;" src="<?= WEBROOT.'images/'.$magasin['url_img_mag'] ?> "></td>
-            <td><?= $magasin['type_val_mag'] ?></td>
-            <td><?= $magasin['val_mag'] ?></td>
-            <td><?= $magasin['link_mag'] ?></td>
-            <td>
-            	<a href="edit_magasin.php?id=<?= $magasin['id_mag'] ?>"><button class="btn btn-success">Editer</button></a>
+      					<tr>
+                  <td><?= $magasin['id_mag'] ?></td>
+                  <td><?= $magasin['nom_mag'] ?></td>
+                  <td> <img style="width:60px;" src="<?= WEBROOT.'images/'.$magasin['url_img_mag'] ?> "></td>
+                  <td><?= $magasin['type_val_mag'] ?></td>
+                  <td><?= $magasin['val_mag'] ?></td>
+                  <td><?= $magasin['link_mag'] ?></td>
+                  <td>
+                  	<a href="edit_magasin.php?id=<?= $magasin['id_mag'] ?>"><button class="btn btn-success">Editer</button></a>
 
-              <a href="?delete=<?= $magasin['id_mag'] ?>&csrf=<?= $_SESSION['csrf'] ?>"><button class="btn btn-warning" onclick="return confirm('Voulez-vous vraiment supprimer ?');">Supprimer</button></a>
-      		  </td>
-          </tr>
+                    <a href="?delete=<?= $magasin['id_mag'] ?>&csrf=<?= $_SESSION['csrf'] ?>"><button class="btn btn-warning" onclick="return confirm('Voulez-vous vraiment supprimer ?');">Supprimer</button></a>
+            		  </td>
+                </tr>
 
-			<?php endforeach  ?>
+      			  <?php endforeach  ?>
                 
               </tbody>
             </table>

@@ -5,7 +5,6 @@
 <?php
 
   $selectPages = $db->query("SELECT * FROM vp_pages");
-
   $pages = $selectPages->fetchAll();
 
   /**
@@ -54,17 +53,21 @@
 
           <h2>Mes autres pages :</h2>
 
-          <div class="col-sm-6 col-md-4">
-            <div class="thumbnail">
-              <img src="..." alt="...">
+          <?php foreach ($pages as $k => $page): ?>
+
+            <div class="col-sm-6 col-md-4">
+              <div class="thumbnail">
+                <img src="..." alt="...">
                 <div class="caption">
-                  <h3>Thumbnail label</h3>
+                  <h3><?= $page['nom_page'] ?></h3>
                   <p>...</p>
-                  <p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+                  <p><a href="edit_page.php?id=<?= $page['id_page'] ?>" class="btn btn-primary" role="button">Modifier</a> <a href="#" class="btn btn-default" role="button">Supprimer</a></p>
                 </div>
               </div>
             </div>
-          
+
+          <?php endforeach  ?>
+
         </div>
       </div>
     </div>
