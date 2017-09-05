@@ -55,26 +55,21 @@
         <?php include('includes/navAdmin.php') ?>
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1 class="page-header">Nouvelle Page :</h1>
+          <h1 class="page-header">Nouvelle Ligne :</h1>
 
           <div class="row">
             <div class="col-sm-6">
               <form action="#" method="POST" enctype="multipart/form-data">
 
                 <div class="form-group">
-                  <label for="nom_magasin">Nom de la page :</label>
+                  <label for="nom_magasin">Choix des magasins :</label>
                   <input type="text" class="form-control" id="nom_magasin" placeholder="Nom de la page :" name="nom_magasin"/>
-                </div>
-
-                <div class="form-group">
-                  <label for="nom_magasin">Définition des lignes :</label>
-                  <button>Ajouter une ligne</button>
                 </div>
 
                 <div class="form-group">
                   <input type="hidden" value="<?= $_SESSION['csrf'] ?>" name="csrf">
                 </div>
-                <button type="submit" class="btn btn-default">Enregistrer la page </button>
+                <button type="submit" class="btn btn-default">Enregistrer la ligne</button>
 
               </form>
             </div>
