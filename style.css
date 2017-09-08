@@ -124,14 +124,23 @@ CSS
     width:30%;
     margin-top:5%;
     height: 80%;
+    transition : all .8s ease;
 }
 
-.socialMedia .facebook{
-    margin-right: 20%;
+.socialMedia .facebook .svg-icon path, .socialMedia .twitter .svg-icon path{
+    transition:all .3s ease;
 }
 
 .socialMedia .facebook:hover .svg-icon path, .socialMedia .twitter:hover .svg-icon path{
     fill:#15c5ce;
+}
+
+.socialMedia .iconSeparator{
+    display: inline-block;
+    border-right: 1px solid white;
+    width: 1px;
+    height: 62%;
+    margin: 0 10%;
 }
 
 .containCompteur{
@@ -146,7 +155,7 @@ CSS
 	text-decoration: none;
 	font-family: 'montserratlight';
 	font-size: 28px;
-	padding: 10px 0;
+	padding: 12px 0 10px 0;
 	text-transform: uppercase;
     transition:all .4s ease;
 }
@@ -181,14 +190,16 @@ CSS
 }
 
 .bandeauPromo .valEco .txtJusqua{
+    display: inline-block;
     font-size:32%;
     margin-right: 2%;
     font-weight: normal;
+    vertical-align: top;
+    margin-top: 8%;
 }
 
 .bandeauPromo .valEco .oldPrice{
     font-size: 14px;
-    margin-right: 5%;
 }
 
 .xblocs{
