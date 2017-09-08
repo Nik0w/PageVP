@@ -2,28 +2,113 @@ var structure = {
   "lignes":[
     {
       "type": "4s",
-      "magasins": [
-        "Informatique",
-        "Tablette-tactile",
-        "Image-et-son",
-        "Jardin"
-      ]
+      "nbVignette":"4",
+
+      "vignettes":{
+
+        "1":{
+          "image_vignette":"vignette-test.jpg",
+          "lien_vignette":"http://cdiscount.com",
+          "economie":"Jusqu'à",
+          "prix_barre":"",
+          "valeur_eco":"-40%"
+        },
+
+        "2":{
+          "image_vignette":"Vignette620x620-Alcool.png",
+          "lien_vignette":"http://cdiscount.com",
+          "economie":"",
+          "prix_barre":"",
+          "valeur_eco":"-25%"
+        },
+
+        "3":{
+          "image_vignette":"Vignette620x620-Apple.png",
+          "lien_vignette":"http://cdiscount.com",
+          "economie":"",
+          "prix_barre":"",
+          "valeur_eco":"150€"
+        },
+
+        "4":{
+          "image_vignette":"Vignette620x620-Montres.png",
+          "lien_vignette":"http://cdiscount.com",
+          "economie":"",
+          "prix_barre":"150€",
+          "valeur_eco":"140€"
+        }
+      }
     },
     {
       "type": "2b",
-      "magasins": [
-        "Informatique",
-        "Tablette-tactile"
-      ]
+      "nbVignette":"2",
+
+      "vignettes":{
+
+      "1":{
+          "image_vignette":"Vignette620x620-Fitness.png",
+          "lien_vignette":"http://cdiscount.com",
+          "economie":"Jusqu'à",
+          "prix_barre":"",
+          "valeur_eco":"-40%"
+        },
+
+        "2":{
+          "image_vignette":"Vignette620x620-Mobilite.png",
+          "lien_vignette":"http://cdiscount.com",
+          "economie":"",
+          "prix_barre":"",
+          "valeur_eco":"-25%"
+        }
+      }
     },
     {
       "type": "2s1b2s",
-      "magasins": [
-        "Informatique",
-        "Tablette-tactile",
-        "Image-et-son",
-        "Jardin"
-      ]
+      "nbVignette":"5",
+
+      "vignettes":{
+
+      "1":{
+          "image_vignette":"Vignette620x620-Fitness.png",
+          "lien_vignette":"http://cdiscount.com",
+          "economie":"Jusqu'à",
+          "prix_barre":"",
+          "valeur_eco":"-40%"
+        },
+
+        "2":{
+          "image_vignette":"Vignette620x620-Mobilite.png",
+          "lien_vignette":"http://cdiscount.com",
+          "economie":"",
+          "prix_barre":"",
+          "valeur_eco":"-25%"
+        },
+
+        "3":{
+          "image_vignette":"Vignette620x620-Alcool.png",
+          "lien_vignette":"http://cdiscount.com",
+          "economie":"",
+          "prix_barre":"",
+          "valeur_eco":"-25%"
+        },
+
+        "4":{
+          "image_vignette":"Vignette620x620-Apple.png",
+          "lien_vignette":"http://cdiscount.com",
+          "economie":"",
+          "prix_barre":"",
+          "valeur_eco":"150€"
+        },
+
+        "5":{
+          "image_vignette":"Vignette620x620-Montres.png",
+          "lien_vignette":"http://cdiscount.com",
+          "economie":"150€",
+          "prix_barre":"",
+          "valeur_eco":"110€"
+        }
+      }
+
     }
   ]
 }

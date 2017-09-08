@@ -1,0 +1,47 @@
+var structure = {
+  "lignes":[
+    {
+      "type": "4s",
+      "img_vignettes": [
+        "Informatique",
+        "Tablette-tactile",
+        "Image-et-son",
+        "Jardin"
+      ],
+      "url_magasins": [
+        "Informatique",
+        "Tablette-tactile",
+        "Image-et-son",
+        "Jardin"
+      ]
+    },
+    {
+      "type": "2b",
+      "img_vignettes": [
+        "Informatique",
+        "Tablette-tactile"
+      ],
+      "url_magasins": [
+        "Informatique",
+        "Tablette-tactile"
+      ]
+    },
+    {
+      "type": "2s1b2s",
+      "img_vignettes": [
+        "Informatique",
+        "Tablette-tactile",
+        "Image-et-son",
+        "Jardin",
+        "Jardin"
+      ],
+      "url_magasins": [
+        "Informatique",
+        "Tablette-tactile",
+        "Image-et-son",
+        "Jardin",
+        "Jardin"
+      ]
+    }
+  ]
+}

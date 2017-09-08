@@ -31,6 +31,29 @@
 
 }
 
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  height: 90%;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #ffffff;
+}
+
+.svg-icon circle {
+  stroke: #ffffff;
+  stroke-width: 1;
+}
+
+/* -----
+CSS
+----- */
+
 #pageContainer{
 	background: url('background-test.jpg') no-repeat fixed;
 	background-size: cover;
@@ -69,10 +92,8 @@
 .ligne{
 	margin-bottom: 15px;
 }
-
 .vignette{
     overflow: hidden;
-
 }
 
 .vignette img{
@@ -101,31 +122,16 @@
 .socialMedia .facebook, .socialMedia .twitter{
     display: inline-block;
     width:30%;
-    margin-top:4%;
+    margin-top:5%;
     height: 80%;
 }
 
 .socialMedia .facebook{
-    transition: all .3s ease;
-    background: url('fb.png') no-repeat;
-    background-size: contain;
-    margin-right: 9%;
-    transform:translateX(0);
+    margin-right: 20%;
 }
 
-.socialMedia .facebook:hover{
-    transition: all .1s ease;
-    background: url('fb-hover.png') no-repeat;
-    background-size: contain;
-    margin-right: 9%;
-    transform:translateX(0);
-}
-
-.socialMedia .twitter{
-    transition: all .3s ease;
-    background: url('tw.png') no-repeat;
-    background-size: 100%;
-    background-position:0 100%; 
+.socialMedia .facebook:hover .svg-icon path, .socialMedia .twitter:hover .svg-icon path{
+    fill:#15c5ce;
 }
 
 .containCompteur{
@@ -169,7 +175,20 @@
 
 .bandeauPromo .valEco{
     display: block;
-    margin-top: 7px;
+    margin-top: 4.5%;
+    margin-bottom: 3.4%;
+    font-weight: 800;
+}
+
+.bandeauPromo .valEco .txtJusqua{
+    font-size:32%;
+    margin-right: 2%;
+    font-weight: normal;
+}
+
+.bandeauPromo .valEco .oldPrice{
+    font-size: 14px;
+    margin-right: 5%;
 }
 
 .xblocs{
